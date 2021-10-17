@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000000;
+    height: 100vh;
+}
+header h2{
+    color: #fff;
+    padding: 20px;
+    border-bottom: 2px solid #fff;
+}
+main{
+    overflow-y: auto;
+    height: 89vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+main::-webkit-scrollbar{
+    width: 10px;
+}
+.container{
+    box-shadow: 0 0 10px 0 #fff;
+    padding: 10px;
+    width: 280px;
+    color: #fff;
+    border-radius: 10px;
+}
+.image-container{
+    text-align: center;
+}
+.image-container img{
+    width: 250px;
+    border-radius: 10px;
+}
+.musicInfo{
+    text-align: center;
+    padding: 20px;
+}
+.musicInfo marquee{
+    color: #fff;
+    margin-bottom: 10px;
+}
+.btn{
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+
+@media(max-width: 768px){
+    .container{
+        width: 180px;
+    }
+    .image-container img{
+        width: 150px;
+    }
+    .btn{
+        width: 120px;
+    }
+}

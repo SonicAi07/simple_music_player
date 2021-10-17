@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+
+    <header>
+        <h2>Music Player</h2>
+    </header>
+    <main>
+        <div class="container">
+            <div class="image-container">
+                <img src="./musics/levitating.jpg" alt="img1">
+            </div>
+            <div class="musicInfo">
+                <marquee>Levitating | Featuring | DaBaby | Official Music Video</marquee>
+                <div class="btn">
+                    <i class="fa fa-play fa-lg" onclick="firstSongOn()"></i>
+                    <i class="fa fa-pause fa-lg" onclick="firstSongPause()"></i>
+                    <i class="fa fa-stop fa-lg" onclick="firstSongStop()"></i>
+                </div>
+                <audio id="music1">
+                    <source src='./musics/Levitating Featuring DaBaby Official Music Video.mp3'>
+                </audio>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image-container">
+                <img src="./musics/talking-to-the-moon.jpg" alt="img2">
+            </div>
+            <div class="musicInfo">
+                <marquee>Bruno Mars | Talking | To The Moon | Official Lyric Video</marquee>
+                <div class="btn">
+                    <i class="fa fa-play fa-lg" onclick="secondSongOn()"></i>
+                    <i class="fa fa-pause fa-lg" onclick="secondSongPause()"></i>
+                    <i class="fa fa-stop fa-lg" onclick="secondSongStop()"></i>
+                </div>
+                <audio id="music2">
+                    <source src='./musics/Bruno Mars  Talking To The Moon Official Lyric Video.mp3'>
+                </audio>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image-container">
+                <img src="./musics/one-dancing.jpg" alt="img1">
+            </div>
+            <div class="musicInfo">
+                <marquee>One Dancing</marquee>
+                <div class="btn">
+                    <i class="fa fa-play fa-lg" onclick="thirdSongOn()"></i>
+                    <i class="fa fa-pause fa-lg" onclick="thirdSongPause()"></i>
+                    <i class="fa fa-stop fa-lg" onclick="thirdSongStop()"></i>
+                </div>
+                <audio id="music3">
+                    <source src='./musics/One Dancing.mp3'>
+                </audio>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image-container">
+                <img src="./musics/animals-maroon-5.jpg" alt="img1">
+            </div>
+            <div class="musicInfo">
+                <marquee>Maroon 5 Animals</marquee>
+                <div class="btn">
+                    <i class="fa fa-play fa-lg" onclick="fourthSongOn()"></i>
+                    <i class="fa fa-pause fa-lg" onclick="fourthSongPause()"></i>
+                    <i class="fa fa-stop fa-lg" onclick="fourthSongStop()"></i>
+                </div>
+                <audio id="music4">
+                    <source src='./musics/Maroon 5  Animals.mp3'>
+                </audio>
+            </div>
+        </div>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
